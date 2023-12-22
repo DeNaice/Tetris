@@ -48,7 +48,7 @@ public class Client extends PApplet implements ITetrisView {
                 int y = i * cellSize;
                 if (grid[i][j] == 1) {
                     // Für jedes einzelne Feld -> Wenn Feld auf 1 gesetzt
-                    stroke(0);
+                    stroke(150, 0, 150);
                     rect(x + 25, y + 25, 40, 40);
                     fill(150, 0, 150);
                     // Wenn das Feld auf 0 sitzt dann wird es leer
@@ -61,6 +61,7 @@ public class Client extends PApplet implements ITetrisView {
             }
         }
     }
+
 
     @Override
     public void drawTitleScreen() {
